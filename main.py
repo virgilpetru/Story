@@ -29,8 +29,8 @@ print("""
 /|\/|\/|\ /|\         /|\/|\ /|\/|\/|\ /|\/|\ 
 /|\/|\/|\ /|\         /|\/|\ /|\/|\/|\ /|\/|\ 
 /|\/|\/|\ /|\         /|\/|\ /|\/|\/|\ /|\/|\ """)
-forest = input("You see that your path is dividing in two. Where are you heading now? Left or Right? ")
-if forest != "left" and forest != "Left":
+forest = input("You see that your path is dividing in two. Where are you heading now? Left or Right? ").lower()
+if forest !="left":
     print("You bumped into the hungry trolls, they are going to enjoy you as dinner. GAME OVER!")
     print(""" 
        ,/`|;V\.;
@@ -49,7 +49,7 @@ if forest != "left" and forest != "Left":
       _,-'     `-   ""|---.|...""")
     sys.exit()
 print("The path you follow takes you to a river but you need to cross it, over here you have to choose: ")
-river = input("You can take the boat next to the dock or you can try to swim across ")
+river = input("You can 'take the boat' next to the dock or you can try to 'swim' across ").lower()
 if river != "take the boat":
     print("You decided to swim, but the water is full of ferocious crocodiles. GAME OVER!")
     sys.exit()
@@ -64,14 +64,14 @@ you walk a few steps and you
 see the cabin in the woods, but be careful, it is not an ordinary one, it is a magic cabin,
 be careful with your next moves!""")
 cabin = input("""You are in front of the cabin, but it has 3 front doors. Which one do you choose?
-Brown, Green or Black?""" )
-if (cabin == "Brown") or (cabin == "brown"):
+Brown, Green or Black?""" ).lower();
+if cabin == "brown":
     print("You choose the wrong door, the witch catches you in a trap. GAME OVER!")
     sys.exit()
-elif (cabin == "Green") or (cabin == "green"):
+elif cabin == "green":
     print("You choose the wrong door, you entered a room full of beasts. GAME OVER!")
     sys.exit()
-elif (cabin == "Black") or (cabin == "black"):
+elif cabin == "black":
     print ("CONGRATULATIONS! The door you picked opens to a room full of gold. You find the treasure!")
     print("""
               .-=========-.
